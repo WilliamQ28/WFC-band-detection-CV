@@ -38,6 +38,7 @@ python color_augment.py --dataset C:\wfc\datasets --split train --per_image 2 --
 
 Grayscale pass:
 python color_decolorize.py --dataset C:\wfc\datasets --split train --ab_amp 20 --p_shuffle 0.0 --b_gain 0.95 1.05 --c_gain 0.95 1.05
+
 (**End of data augmentation and wrangling**)
 
 To train (assumed project root: C:\wfc):
