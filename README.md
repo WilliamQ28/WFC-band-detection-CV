@@ -84,6 +84,9 @@ To train (assumed project root: C:\wfc):
 .\train_yolo_gpu.bat
 ```
 
+
+Training result logs are in results folder
+
 CheckSum - SHA256: 98f944b5af7adbc93453fbb7663aa43ac15b74a8b65d64a372d0ada0ad13498a
 
 (epoch, imgsz, batch, device, workers arguments are in the bat file)
