@@ -17,9 +17,13 @@ To check: Windows PowerShell: certutil -hashfile datasets.zip SHA256
 Verify the dataset's structure: 
 
 datasets/
+
  ├── images/train/
+ 
  ├── images/val/
+ 
  ├── labels/train/
+ 
  └── labels/val/
 
 Environment Setup(at project root):
