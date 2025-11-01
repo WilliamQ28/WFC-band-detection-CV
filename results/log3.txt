@@ -326,16 +326,17 @@ Model summary (fused): 72 layers, 3,006,818 parameters, 0 gradients, 8.1 GFLOPs
 val: Fast image access  (ping: 0.00.0 ms, read: 2142.4665.8 MB/s, size: 2412.2 KB)
 val: Scanning C:\wfc\datasets\labels\val.cache... 40 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 40/40  0.0s
                  Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 33% ━━━━──────── 1/3 0.1it/s 4                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 67% ━━━━━━━━──── 2/3 0.3it/s 5                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 3/3 0.5it/s                  Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 3/3 0.5it/s 6.3s
-                   all         40        202      0.579      0.707      0.677      0.482
-                Banner         16         16      0.251       0.25      0.245      0.163
-                Footer         35         35      0.609        0.8      0.726      0.483
-                Header         39         39      0.621      0.842      0.824      0.584
-                  Main         40         41      0.746      0.859      0.889      0.705
-                   Nav         37         38      0.496      0.672      0.542      0.361
-            Supplement         33         33      0.751      0.822      0.834      0.594
-Speed: 1.3ms preprocess, 17.6ms inference, 0.0ms loss, 1.6ms postprocess per image
+                   all         40        202      0.604      0.674      0.657      0.503
+                Banner         16         16      0.232      0.312      0.179      0.144
+                Footer         35         35      0.557      0.629      0.671      0.538
+                Header         39         39      0.622      0.795      0.758      0.584
+                  Main         40         41      0.782      0.854      0.884      0.692
+                   Nav         37         38      0.648      0.684      0.657      0.445
+            Supplement         33         33      0.784       0.77       0.79      0.618
+Speed: 1.2ms preprocess, 12.0ms inference, 0.0ms loss, 1.4ms postprocess per image
 Results saved to C:\wfc\runs\detect\val3
  Learn more at https://docs.ultralytics.com/modes/val
 
 Done. Results under C:\wfc\runs\detect\wfc_ui_yolov8_coloraug2
+
 Press any key to continue . . .
