@@ -6,7 +6,7 @@ Dataset link:
 
 https://1sfu-my.sharepoint.com/:u:/g/personal/qza85_sfu_ca/ESxtxICGc8pEh7TSIqeTxOABR8NR3_pPX1IeG1LsNHOcHA?e=OAEzpw
 
-***For your safety, please verify checksums before proceeding***
+***Before unzipping, please verify the SHA-256 checksum to ensure you are using the correct dataset file and not an altered copy.***
 
 CheckSum - SHA256: f2aa74c5df525846e0cd525b023660fea2be4e90713bf801e3b07b778c91c6aa
 
@@ -78,14 +78,14 @@ python color_decolorize.py --dataset C:\wfc\datasets --split train --ab_amp 20 -
 
 To train (assumed project root: C:\wfc):
 
-***For your safety, please verify checksums before proceeding***
+***This batch file executes YOLOv8 GPU training from your local drive. Please review the file contents and verify the checksum before running.***
 
 ```cmd
 .\train_yolo_gpu.bat
 ```
 
 
-Training result logs are in results folder
+Training result logs are in the results folder.
 
 CheckSum - SHA256: 98f944b5af7adbc93453fbb7663aa43ac15b74a8b65d64a372d0ada0ad13498a
 
