@@ -11,9 +11,18 @@ https://1sfu-my.sharepoint.com/:u:/g/personal/qza85_sfu_ca/ESxtxICGc8pEh7TSIqeTx
 CheckSum - SHA256: f2aa74c5df525846e0cd525b023660fea2be4e90713bf801e3b07b778c91c6aa
 
 To check: 
-          Windows(PowerShell): certutil -hashfile datasets.zip SHA256
 
-          Linux: sha256sum datasets.zip
+Windows(PowerShell):
+          
+```powershell
+certutil -hashfile datasets.zip SHA256
+```
+
+Linux:
+          
+```bash
+sha256sum datasets.zip
+```
 
 Verify the dataset's structure: 
 
@@ -39,23 +48,31 @@ python verify_cuda.py
 (**Project root assumed to be C:\wfc**)
 
 Screenshot capture:
+```cmd
 python screenshot_from_links.py --in C:\wfc\source\links.txt --out C:\wfc\screens --width 1440 --timeout 20000 --concurrency 6 --retries 1 --throttle 100
+```
 
 80/20 train val split:
 
 Expects C:\wfc\datasets\images and C:\wfc\datasets\labels to contain flat files already.
 
+```cmd
 python split_dataset.py
+```
 
 Color augment pass:
 
 Per original image, make k variants in TRAIN split.
 
+```cmd
 python color_augment.py --dataset C:\wfc\datasets --split train --per_image 2 --exts ".jpg,.jpeg,.png"
+```
 
 Grayscale pass:
 
+```cmd
 python color_decolorize.py --dataset C:\wfc\datasets --split train --ab_amp 20 --p_shuffle 0.0 --b_gain 0.95 1.05 --c_gain 0.95 1.05
+```
 
 (**End of data augmentation and wrangling**)
 
@@ -63,7 +80,9 @@ To train (assumed project root: C:\wfc):
 
 ***For your safety, please verify checksums before proceeding***
 
+```cmd
 .\train_yolo_gpu.bat
+```
 
 CheckSum - SHA256: 98f944b5af7adbc93453fbb7663aa43ac15b74a8b65d64a372d0ada0ad13498a
 
