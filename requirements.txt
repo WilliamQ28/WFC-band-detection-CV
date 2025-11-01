@@ -1,0 +1,7 @@
+ultralytics>=8.3.200
+torch>=2.4.0
+numpy
+pillow
+playwright
+matplotlib
+opencv-python
